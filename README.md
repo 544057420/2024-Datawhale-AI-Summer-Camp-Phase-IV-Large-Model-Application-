@@ -5,7 +5,8 @@
 
 ## 课程链接：<https://linklearner.com/activity/14/11/25>
 
-## 模型下载地址:<www.modelscope.cn/datasets/Datawhale/AICamp_yuan_baseline>
+## 模型下载地址: www.modelscope.cn/datasets/Datawhale/AICamp_yuan_baseline
+
 ### 精神医学与心理医学资料
 [危机干预热线与自杀干预知识](https://mp.weixin.qq.com/s/SCj8hyeZxJGgMGwYTyzVmQ)
 
