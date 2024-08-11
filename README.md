@@ -7,6 +7,12 @@
 
 ## 模型下载地址: www.modelscope.cn/datasets/Datawhale/AICamp_yuan_baseline
 
+## 数据集：
+
+[97.5K rows]<https://hf-mirror.com/datasets/chansung/mental_health_counseling_conversations_merged>
+
+[3.5k rows]<https://hf-mirror.com/datasets/Amod/mental_health_counseling_conversations>
+
 ### 精神医学与心理医学资料
 [危机干预热线与自杀干预知识](https://mp.weixin.qq.com/s/SCj8hyeZxJGgMGwYTyzVmQ)
 
