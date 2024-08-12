@@ -13,6 +13,8 @@
 
 [3.5k rows]<https://hf-mirror.com/datasets/Amod/mental_health_counseling_conversations>
 
+[中文心理健康支持对话 · 数据集(SmileChat)与大模型(MeChat)]<https://github.com/qiuhuachuan/smile>
+
 ### 精神医学与心理医学资料
 [危机干预热线与自杀干预知识](https://mp.weixin.qq.com/s/SCj8hyeZxJGgMGwYTyzVmQ)
 
