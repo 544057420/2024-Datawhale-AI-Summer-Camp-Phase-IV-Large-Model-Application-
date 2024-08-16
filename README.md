@@ -89,3 +89,33 @@ Datawhale开源教程，围绕大模型全链路的“手搓”大模型指南�
 Datawhale开源教程，一个面向小白开发者的大模型应用开发教程！
 
 其他模型下载：hugging face 镜像<https://hf-mirror.com/>
+
+## 安装方法
+应答模型基于`Yuan2-2B`，向量模型基于`bge-small-zh-v1.5`,GUI界面需要安装 `streamlit`
+### 环境准备（含模型下载）
+```python
+# 查看已安装依赖
+! pip list
+# 安装 streamlit
+! pip install streamlit==1.24.0
+# 向量模型下载
+from modelscope import snapshot_download
+model_dir = snapshot_download("AI-ModelScope/bge-small-zh-v1.5", cache_dir='.')
+# 源大模型下载
+from modelscope import snapshot_download
+model_dir = snapshot_download('IEITYuan/Yuan2-2B-Mars-hf', cache_dir='.')
+# model_dir = snapshot_download('IEITYuan/Yuan2-2B-July-hf', cache_dir='.')
+# 导入所需的库
+from typing import List
+import numpy as np
+
+import torch
+from transformers import AutoModel, AutoTokenizer, AutoModelForCausalLM
+```
+AfterEMOdemo.py代码已经完成了加载嵌入模型和计算嵌入的任务，因此不需要再定义一个EmbeddingModel类。
+
+### 进入GUI
+```python
+streamlit run Task\ 3\ AfterEMOdemo.py --server.address 127.0.0.1 --server.port 6006
+```
+
