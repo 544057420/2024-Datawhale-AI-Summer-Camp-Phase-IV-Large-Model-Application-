@@ -15,7 +15,7 @@
 
 [中文心理健康支持对话 · 数据集(SmileChat)与大模型(MeChat)]<https://github.com/qiuhuachuan/smile>
 
-### 精神医学与心理医学资料
+### 精神医学与心理医学资料(由于版权原因，部分专著在此无法公开其Z-lib获取链接)
 [危机干预热线与自杀干预知识](https://mp.weixin.qq.com/s/SCj8hyeZxJGgMGwYTyzVmQ)
 
 [疾病与状况 - 妙佑医疗国际](mayoclinic.org)
@@ -23,6 +23,18 @@
 [MSD诊疗手册专业版](https://www.msdmanuals.cn/professional)
 
 [PubMed](https://pubmed.ncbi.nlm.nih.gov/?Db=pubmed)
+
+Cognitive-Behavioral Strategies in Crisis Intervention, Third Edition (Frank M. Dattilio, Arthur Freeman) (Z-Library)
+
+Psychological Interventions in Times of Crisis (Laura Barbanel EdD  ABPP etc.) (Z-Library)
+
+伯恩斯新情绪疗法 (大卫.伯恩斯) (Z-Library)
+
+大学生心理危机干预指南 (金晓明) (Z-Library)
+
+危机和创伤中成长：10位心理专家危机干预之道（如何面对新冠疫情等重大创伤？12位国内知名心理学专家教你如何与危机相处） (方新  主编 [方新... (Z-Library)
+
+自闭症问题行为干预 (自闭症前沿研究丛书) (园山繁树  裴虹) (Z-Library)
 
 ### 需要危机干预识别的标志
 
@@ -70,6 +82,9 @@ https://github.com/YuriMiller/CompleteSuicideManual-Zh_CN
 10. **National Institute of Mental Health (NIMH)**
     - NIMH 提供一些心理健康信息和资源，虽然不直接提供在线测试，但有链接到其他筛查工具。
     - 网址：[NIMH](https://www.nimh.nih.gov/)
+11.  **https://www.psyctest.cn/**
+    - 赛可心理测试官方网站
+    - 网址：https://www.psyctest.cn/
 ## 大模型相关资料：
 
 大模型基础 so-large-lm <https://github.com/datawhalechina/so-large-lm>
