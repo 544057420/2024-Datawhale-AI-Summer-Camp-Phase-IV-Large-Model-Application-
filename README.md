@@ -111,6 +111,8 @@ Datawhale开源教程，一个面向小白开发者的大模型应用开发教�
 ```python
 # 查看已安装依赖
 ! pip list
+# langchain安装
+!pip install pypdf faiss-gpu langchain langchain_community langchain_huggingface streamlit==1.24.0
 # 安装 streamlit
 ! pip install streamlit==1.24.0
 # 向量模型下载
