@@ -131,6 +131,6 @@ AfterEMOdemo.py代码已经完成了加载嵌入模型和计算嵌入的任务�
 
 ### 进入GUI
 ```python
-streamlit run Task\ 3\ AfterEMOdemo.py --server.address 127.0.0.1 --server.port 6006
+streamlit run AfterEMOdemo.py --server.address 127.0.0.1 --server.port 6006
 ```
 
