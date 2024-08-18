@@ -1,6 +1,6 @@
 # 2024-Datawhale-AI-Summer-Camp-Phase-IV-Large-Model-Application
 2024Datawhale AI夏令营第四期方向2：大模型开发与应用
-
+![demo1.0](https://github.com/544057420/2024-Datawhale-AI-Summer-Camp-Phase-IV-Large-Model-Application-/blob/main/demo12024-08-18%20104815.jpg)
 基于浪潮“源”大模型的AI心理咨询师与危机干预助理
 
 ## 课程链接：<https://linklearner.com/activity/14/11/25>
@@ -108,6 +108,26 @@ Datawhale开源教程，一个面向小白开发者的大模型应用开发教�
 ## 安装方法
 应答模型基于`Yuan2-2B`，向量模型基于`bge-small-zh-v1.5`,GUI界面需要安装 `streamlit`
 ### 环境准备（含模型下载）
+方法1
+
+安装依赖包
+
+```python
+pip install -r requirements.txt
+```
+
+下载模型
+```python
+# 向量模型下载
+from modelscope import snapshot_download
+model_dir = snapshot_download("AI-ModelScope/bge-small-zh-v1.5", cache_dir='.')
+# 源大模型下载
+from modelscope import snapshot_download
+model_dir = snapshot_download('IEITYuan/Yuan2-2B-Mars-hf', cache_dir='.')
+# model_dir = snapshot_download('IEITYuan/Yuan2-2B-July-hf', cache_dir='.')
+```
+
+方法2
 ```python
 # 查看已安装依赖
 ! pip list
