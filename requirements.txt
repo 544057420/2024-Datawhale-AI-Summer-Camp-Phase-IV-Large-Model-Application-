@@ -1,0 +1,7 @@
+torch
+streamlit
+transformers
+langchain
+langchain_community
+langchain_huggingface
+modelscope
