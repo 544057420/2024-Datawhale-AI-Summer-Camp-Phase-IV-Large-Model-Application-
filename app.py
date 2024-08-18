@@ -72,7 +72,7 @@ class Yuan2_LLM(LLM):
         prompt = prompt.strip()
         prompt += "<sep>"
         inputs = self.tokenizer(prompt, return_tensors="pt")["input_ids"]
-        outputs = self.model.generate(inputs, do_sample=False, max_new_tokens=9216)  # 使用max_new_tokens代替max_length
+        outputs = self.model.generate(inputs, do_sample=False, max_new_tokens=1024)  # 使用max_new_tokens代替max_length
         output = self.tokenizer.decode(outputs[0])
 
         # 检查输出是否包含 <sep> 和 <eod> 标记
@@ -207,10 +207,10 @@ class ChatBot:
             raise
 
         # 检索相似的chunks
-        chunks = vector_store.similarity_search(query=query, k=5)
+        chunks = vector_store.similarity_search(query=query, k=2)
 
         # 检索RAG知识库
-        rag_chunks = self.rag_vector_store.similarity_search(query=query, k=5)
+        rag_chunks = self.rag_vector_store.similarity_search(query=query, k=2)
 
         if rag_chunks:
             # 如果RAG知识库中检索到相关内容，则使用该内容生成回复
@@ -258,12 +258,12 @@ def main():
             inputs = llm.tokenizer(prompt, return_tensors="pt", truncation=False)["input_ids"]
 
             # 如果输入长度超过max_length，则删除最早的消息
-            if inputs.shape[1] > 9216:
+            if inputs.shape[1] > 1024:
                 del st.session_state.messages[0:2]
             else:
                 break
 
-        outputs = llm.model.generate(inputs, do_sample=False, max_length=9216)
+        outputs = llm.model.generate(inputs, do_sample=False, max_length=2048)
         output = llm.tokenizer.decode(outputs[0])
         response = output.split("<sep>")[-1].replace("<eod>", '')
 
